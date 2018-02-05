@@ -28,6 +28,10 @@
       .container {
         /*padding-left: 0px;*/
       }
+      .starter-template img {
+        max-width: 100%;
+        padding:10px 2px;
+      }
     </style>
 
   </head>
@@ -48,7 +52,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -57,21 +61,30 @@
     </nav>
 
     <div class="container">
-
-      <div class="row">
-        <div class="starter-template">
-          <div class="col-md-6">
-            <img src="meep.jpg" style="max-width: 100%">
+      <div class="starter-template">
+        <h1>Kado</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <p>Kado is a website that allows you to compile a wishlist with items from all over the web.  Kado was created using Django, Javascript, Beautiful Soup, AWS, some Twitter Bootstrap, and hosted on Heroku.  When you add an entry to your list, Kado scrapes the item's page and grabs pictures for your choosing.  Below are a couple of screenshots that take you throught the flow of adding an item to your list.  This project has a lot of little bugs that I might get around to fixing in the future but for now, I'm more interested in other projects. <br />
+            <a href="https://github.com/sherleyj/kado">Github Repo</a>
+            <br /><a href="http://kadolist.herokuapp.com/">kadolist.herokuapp.com</a></p>
           </div>
-          <div class="col-md-6">
-            <h1>Hello.</h1>
-            <p>My name is Sherley Gionfriddo and I like to make stuff.  I'm a University of Texas graduate in Computer Science and I'm looking for a job in Web Development.  I took some time off after school to start a family</p>
-          </div>
-        </div>       
+        </div>
+        <div class="row">
+          <div class="col-md-6"><img src="screenshot-home.png"></div>  
+          <div class="col-md-6"><img src="screenshot-prof.png"></div>  
+        </div>
+        <div class="row">
+          <div class="col-md-6"><img src="screenshot-scrape-results.png"></div>  
+          <div class="col-md-6"><img src="screenshot-pic-selected.png"></div>  
+        </div>
+        <div class="row">
+          <div class="col-md-6"><img src="screenshot-item-add-success-1.png"></div>  
+          <div class="col-md-6"><img src="screenshot-item-add-success-2.png"></div>  
+        </div>
       </div>
-
-
     </div><!-- /.container -->
+
 
 
     <!-- Bootstrap core JavaScript
