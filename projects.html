@@ -32,6 +32,45 @@
         max-width: 100%;
         padding:10px 2px;
       }
+
+      .proj-image {
+     	opacity: 1;
+		display: block;
+		width: 100%;
+		height: auto;
+		transition: .5s ease;
+		backface-visibility: hidden;
+      }
+      .col-sm-4 {
+      	position: relative;
+      }
+
+      .col-sm-4:hover .proj-image {
+      	opacity: 0.3
+      }
+
+      .middle {
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	  }
+
+	  .col-sm-4:hover .middle {
+	  	opacity: 1;
+	  }
+
+	  .text {
+		background-color: #4CAF50;
+  		color: white;
+  		font-size: 16px;
+  		padding: 16px 32px;	  }
+      
+
     </style>
 
   </head>
@@ -66,23 +105,29 @@
         <div class="row">
           <a href="kado.html">
           <div class="col-sm-4">
-            <h2>Kado</h2>
-            <img src="pictures/screenshot-home.png">
-            <p></p>
+            <!-- <h2>Kado</h2> -->
+            <img src="pictures/screenshot-home.png" class="proj-image">
+            <div class="middle">
+            	<div class="text">Kado</div>
+            </div>
           </div> 
           </a>
           <a href="edibags.html">
           <div class="col-sm-4">
-            <h2>Edibags</h2>
-            <img src="pictures/screenshot-edibags.png">
-            <p></p>
+            <!-- <h2>Edibags</h2> -->
+            <img src="pictures/screenshot-edibags.png" class="proj-image">
+            <div class="middle">
+            	<div class="text">Edibags</div>
+            </div>
           </div> 
           </a>  
           <a href="aes.html">
           <div class="col-sm-4">
-            <h2>AES</h2>
-            <img src="pictures/aes.png">
-            <p></p>
+            <!-- <h2>AES</h2> -->
+            <img src="pictures/aes.png" class="proj-image">
+            <div class="middle">
+            	<div class="text">AES</div>
+            </div>
           </div> 
           </a>            
         </div>
